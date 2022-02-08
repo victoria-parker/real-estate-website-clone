@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    height: 200vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.hero-background{
+    background: url("https://images.pexels.com/photos/1797393/pexels-photo-1797393.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") rgba(0, 0, 0, 0.6);
+    background-blend-mode: multiply;
+    background-size: cover;
+    height: 80vh;
+}
+
+.social-media{
+    background-color: #211C5F;
+    color:white;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.25rem;
+    padding: 0 2rem;
+}
+
+.social-media ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.social-media a{
+    color: white;
+}
+#navigation-bar{
+   position: absolute;
+   top: 0;
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   align-items: center;
+   padding-top: 1.25rem;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+#navigation-bar nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+#navigation-bar nav ul li{
+    padding-right: 2rem;
+}
+
+#navigation-bar a{
+    color: white;
+    text-decoration: none;
+}
+h1, h2, h3{
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+}
+.hero-index{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.hero-index h1{
+    color: white;
+    letter-spacing:1px;
+    font-weight: lighter;
+    font-size: 2.5rem;
+
+}
+.hero-index h2{
+    color: orange;
+    font-weight: 400;
+    display: inline-block;
+    margin-top: .25rem;
+
+}
+.call-to-action{
+    display: inline-block;
+    margin-top: 50px; 
+    border:1px solid orange;
+   padding: 1rem;
+    background-color: orange;   
+    color: white;
+    text-decoration: none;
+    border-radius: .25rem;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+}
+.sm-call-to-action{
+    display: inline-block;
+    border:1px solid orange;
+    padding: .25rem;
+    background-color: orange;   
+    color: white;
+    text-decoration: none;
+    border-radius: .25rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top:.5rem;
+}
+#our-services{
+    background-color: #252525; 
+    color: white;
+/*     display: grid;
+    grid-template-columns: auto auto;
+    gap:1rem; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 2rem;
+}
+#our-services div{
+    text-align: center;
+}
+.our-sv-img{
+    font-size: 5rem;
+    display: inline-block;
+    color: orange;
+    text-align: center;
+}
