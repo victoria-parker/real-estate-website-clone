@@ -179,7 +179,51 @@ h1, h2, h3{
     border-radius: .25rem;
     object-fit: cover;
 }
-
+.articles{
+    margin:3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.articles-text{
+    width: 400px;
+    padding: 1rem;
+    background-color: #252525;
+}
+.articles-text span{
+    color:orange;
+}
+.articles-text h2{
+    margin: 1rem 0;
+}
+.articles-text p{
+    line-height: 2rem;
+}
+.articles-img img{
+    width: 600px;
+    display: block;
+    object-fit: cover;
+}
+.contact-section{
+    background: url("https://images.pexels.com/photos/1797393/pexels-photo-1797393.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") rgba(0, 0, 0, 0.6);
+    background-blend-mode: multiply;
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.contact-section form{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+.contact-section form input, textarea{
+    border-radius: .25rem;
+    border: none;
+    padding: .5rem;
+}
 
 
 
@@ -191,7 +235,7 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-bottom: 1rem;
+    padding: 1rem 0;
 }
 footer div{
     margin-right: 2rem;   

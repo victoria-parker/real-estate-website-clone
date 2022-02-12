@@ -108,6 +108,50 @@
             </div>
         </div>
     </section>
+    <section class="articles">
+        <div class="articles-text">
+            <span>THINKING TO SELL?</span>
+            <h2>Selling your Property?</h2>
+            <p>We believe that the real estate world should be very simple. Thanks to our technology and our team, we are able to buy homes in just 7 days, renovate them and put them up for sale again. A completely new experience whether you buy or sell.</p>
+            <a href="#" class="sm-call-to-action">contact our agents</a>
+        </div>
+        <div class="articles-img">
+            <img src="images/moving-house.jpg" alt="family moving">
+        </div>
+    </section>
+    <section class="articles">
+        <div class="articles-img">
+            <img src="images/rent-keys.jpg" alt="family moving">
+        </div>
+        <div class="articles-text">
+            <span>THINKING TO LET?</span>
+            <h2>Letting Your Property?</h2>
+            <p>Don't worry about collecting the rent for your home. Minimize the risks when renting. We make a careful selection of the tenant, and we study their solvency, employment contract, payroll, and delinquency. We do a commercial management of your home, providing truthful and objective information, being very efficient and demanding with our results.</p>
+            <a href="#" class="sm-call-to-action">contact our agents</a>
+        </div>
+    </section>
+    <section class="contact-section">
+        <div class="articles-text" style="background-color: transparent;">
+            <span>Need consultation?</span>
+            <h2>Send Us a Message</h2>
+            <p>Please feel free to drop us a line if you have any question.We'll get back to you as soon as possible!</p>
+        </div>
+        <form action="#" method="POST">
+            <label for="full-name">Full Name</label>
+            <input type="text" name="full-name" id="full-name">
+            
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email">
+            
+            <label for="phone">Phone number</label>
+            <input type="tel" name="phone" id="phone">
+            
+            <label for="message">You Message</label>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+            <button class="sm-call-to-action">Submit</button>    
+        </form>
+    </section>
 </main>
 
 <?php
