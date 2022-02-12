@@ -50,6 +50,64 @@
             <button class="sm-call-to-action">Search</button>
         </form>
     </section>
+    <section class="featured-properties">
+        <h2>Featured Sale Properties</h2>
+        <div class="fp-container">
+            <div class="featured-property">
+                <h4>House 23, Green Tree Street, Dublin</h4>
+                <div class="img-container">
+                <img src="images/placeholder-house.jpg" alt="house">
+                </div>
+                <span class="price">$199.999,00</span>
+                <span>House for sale</span>
+            </div>
+            <div class="featured-property">
+                <h4>House 23, Green Tree Street, Dublin</h4>
+                <div class="img-container">
+                <img src="images/placeholder-house.jpg" alt="house">
+                </div>
+                <span class="price">$199.999,00</span>
+                <span>House for sale</span>
+            </div>
+            <div class="featured-property">
+                <h4>House 23, Green Tree Street, Dublin</h4>
+                <div class="img-container">
+                <img src="images/placeholder-house.jpg" alt="house">
+                </div>
+                <span class="price">$199.999,00</span>
+                <span>House for sale</span>
+            </div>
+        </div>
+    </section>
+    <section class="featured-properties">
+        <h2>Featured Rent Properties</h2>
+        <div class="fp-container">
+            <div class="featured-property">
+                <h4>House 23, Green Tree Street, Dublin</h4>
+                <div class="img-container">
+                    <img src="images/placeholder-house.jpg" alt="house">
+                </div>
+                <span class="price">$1.999,00</span>
+                <span>House for rent</span>
+            </div>
+            <div class="featured-property">
+                <h4>House 23, Green Tree Street, Dublin</h4>
+                <div class="img-container">
+                    <img src="images/placeholder-house.jpg" alt="house">
+                </div>
+                <span class="price">$1.999,00</span>
+                <span>House for rent</span>
+            </div>
+            <div class="featured-property">
+                <h4>House 23, Green Tree Street, Dublin</h4>
+                <div class="img-container">
+                    <img src="images/placeholder-house.jpg" alt="house">
+                </div>
+                <span class="price">$1.999,00</span>
+                <span>House for rent</span>
+            </div>
+        </div>
+    </section>
 </main>
 
 <?php
