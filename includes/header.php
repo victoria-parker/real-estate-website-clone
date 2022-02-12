@@ -24,7 +24,7 @@
             <nav id="menu">
                 <ul>
                     <li><a href="index.php">HOME</a></li>
-                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="about.php">ABOUT</a></li>
                     <li><a href="#">SALES</a></li>
                     <li><a href="#">LETTING</a></li>
                     <li><a href="contact.php">CONTACT</a></li>
