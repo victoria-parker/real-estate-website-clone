@@ -5,6 +5,7 @@
             <li><a href="#">1 George Road News, Drogheda </a></li>
             <li><a href="#">01 123 4567</a></li>
             <li><a href="#">Email: info@fake.com</a></li>
+            <li><a href="contact.php">Contact form</a></li>
         </ul>
     </div>
     <div>
@@ -27,10 +28,10 @@
     <div>
         <h3>Follow us</h3> 
         <ul>
-            <li><a href="https://www.facebook.com" target="_blank" title="Facebook"><i class="fab fa-facebook"></i>Facebook</a></li>
+            <li><a href="https://www.facebook.com" target="_blank" title="Facebook"><i class="fab fa-facebook"></i> Facebook</a></li>
             <li><a href="https://www.linkedin.com" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
-            <li><a href="https://www.twitter.com" target="_blank" title="Twitter"><i class="fab fa-twitter"></i>Twitter</a></li>
-            <li><a href="https://www.instagram.com" target="_blank" title="Instagram"><i class="fab fa-instagram"></i>Instagram</a></li>
+            <li><a href="https://www.twitter.com" target="_blank" title="Twitter"><i class="fab fa-twitter"></i> Twitter</a></li>
+            <li><a href="https://www.instagram.com" target="_blank" title="Instagram"><i class="fab fa-instagram"></i> Instagram</a></li>
         </ul>
     </div>
 </footer>

@@ -2,7 +2,13 @@
     include 'includes/header.php';
 ?>
 
-<form action="#" method="POST">
+<section class="contact-section" style="height: 100vh;">
+        <div class="articles-text" style="background-color: transparent;">
+            <span>Need consultation?</span>
+            <h2>Send Us a Message</h2>
+            <p>Please feel free to drop us a line if you have any question.We'll get back to you as soon as possible!</p>
+        </div>
+        <form action="#" method="POST">
             <label for="full-name">Full Name</label>
             <input type="text" name="full-name" id="full-name">
             
@@ -18,9 +24,6 @@
             <button class="sm-call-to-action">Submit</button>    
         </form>
     </section>
-
-
-
 <?php
     include 'includes/footer.php'
 ?>

@@ -27,7 +27,7 @@
                     <li><a href="#">ABOUT</a></li>
                     <li><a href="#">SALES</a></li>
                     <li><a href="#">LETTING</a></li>
-                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="contact.php">CONTACT</a></li>
                 </ul>
             </nav>
         </div>

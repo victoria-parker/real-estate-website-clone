@@ -6,7 +6,6 @@
 }
 body{
     background-color: black;
-    height: 200vh;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     position: relative;
@@ -202,7 +201,6 @@ h1, h2, h3{
 .articles-img img{
     width: 600px;
     display: block;
-    object-fit: cover;
 }
 .contact-section{
     background: url("https://images.pexels.com/photos/1797393/pexels-photo-1797393.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") rgba(0, 0, 0, 0.6);
@@ -224,12 +222,11 @@ h1, h2, h3{
     border: none;
     padding: .5rem;
 }
-
-
-
-
-
-
+.form-el{
+    display: flex;
+    flex-direction: column;
+    padding: .4rem;
+}
 footer{
     width: 100%;
     display: flex;
@@ -253,6 +250,6 @@ footer a{
     text-decoration: none;
     font-weight: lighter;
 }
-footer a:hover{
+#navigation-bar a:hover, footer a:hover{
     color: orange;
 }
