@@ -152,8 +152,24 @@ footer{
     justify-content: center;
     position: absolute;
     bottom: 0;
-    
+    padding-bottom: 1rem;
+}
+footer div{
+    margin-right: 2rem;   
+}
+footer li{
+    list-style: none;
+    padding-bottom: 10px;
 }
 footer h3{
+    color: orange;
+    margin-bottom: .5rem;
+}
+footer a{
+    color:white;
+    text-decoration: none;
+    font-weight: lighter;
+}
+footer a:hover{
     color: orange;
 }
