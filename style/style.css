@@ -9,6 +9,7 @@ body{
     height: 200vh;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
+    position: relative;
 }
 .hero-background{
     background: url("https://images.pexels.com/photos/1797393/pexels-photo-1797393.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") rgba(0, 0, 0, 0.6);
@@ -113,9 +114,6 @@ h1, h2, h3{
 #our-services{
     background-color: #252525; 
     color: white;
-/*     display: grid;
-    grid-template-columns: auto auto;
-    gap:1rem; */
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -146,4 +144,16 @@ h1, h2, h3{
     font-size: .7rem;
     text-transform: uppercase;
     font-weight: lighter;
+}
+footer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    
+}
+footer h3{
+    color: orange;
 }
