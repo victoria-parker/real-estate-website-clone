@@ -1,7 +1,7 @@
 <?php
     include 'includes/header.php';
 ?>
-<article class="hero-background about-article">
+<article class="about-article bg-img">
 <h2>The company</h2>
 <div>
 <p>More than 25 years ago, Maria Parker and John Parker created the Parker firm. Soon the firm grew to become the most prestigious and important real estate agency in Ireland.</p>

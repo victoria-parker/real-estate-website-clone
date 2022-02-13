@@ -2,7 +2,7 @@
     include 'includes/header.php';
 ?>
 
-<section class="contact-section" style="height: 100vh;">
+<section class="contact-section bg-img">
         <div class="articles-text" style="background-color: transparent;">
             <span>Need consultation?</span>
             <h2>Send Us a Message</h2>
