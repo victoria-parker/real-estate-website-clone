@@ -89,6 +89,9 @@
             </div>
         </div>
     </section>
+
+
+
     <section class="featured-properties">
         <h2>Featured Rent Properties</h2>
         <div class="fp-container">
@@ -118,6 +121,8 @@
             </div>
         </div>
     </section>
+
+
     <section class="articles">
         <div class="articles-text">
             <span>THINKING TO SELL?</span>
@@ -129,6 +134,8 @@
             <img src="images/moving-house.jpg" alt="family moving">
         </div>
     </section>
+
+
     <section class="articles">
         <div class="articles-img">
             <img src="images/rent-keys.jpg" alt="family moving">
@@ -140,7 +147,9 @@
             <a href="#" class="sm-call-to-action">contact our agents</a>
         </div>
     </section>
-    <section class="contact-section">
+
+
+    <section class="contact-section bg-img">
         <div class="articles-text" style="background-color: transparent;">
             <span>Need consultation?</span>
             <h2>Send Us a Message</h2>

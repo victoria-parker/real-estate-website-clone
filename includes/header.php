@@ -20,9 +20,9 @@
             </ul>
         </div>
         <div id="navigation-bar">
+            <nav>
             <div id="logo"><img src="images/logo.png" alt="logo" width="100px"></div>
             <button class="btn">&equiv;</button>
-            <nav id="menu">
                 <ul>
                     <li><a href="index.php">HOME</a></li>
                     <li><a href="about.php">ABOUT</a></li>
