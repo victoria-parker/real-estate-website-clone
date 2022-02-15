@@ -278,18 +278,15 @@ footer a{
 .btn{
     display: none;
 }
+.properties-section{
+    padding-top: 7rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
 @media (max-width: 960px) {
-    /* #navigation-bar nav{
-        width: 100%;
-        background-color: red;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around; 
-        align-items: center;
-        position: absolute;
-        top: 0;
-    } */
     .btn{
         display: block;
         background-color: transparent;

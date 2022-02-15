@@ -42,9 +42,9 @@
                 </select>
             </div>
             <div>
-                <label for="max-bedrooms">max-bedrooms</label><br>
-                <select name="max-bedrooms" id="max-bedrooms">
-                    <option value="max-bedrooms">max-bedrooms</option>
+                <label for="amount-of-bedrooms">Amount of bedrooms</label><br>
+                <select name="amount-of-bedrooms" id="amount-of-bedrooms">
+                    <option value="amount-of-bedrooms">Amount of bedrooms</option>
                 </select>
             </div>
             <div>
