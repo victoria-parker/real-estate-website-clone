@@ -19,7 +19,7 @@
                             <img src="images/house-for-sale/<?=$property['image']?>" alt="house">
                             </div>
                             <span class="price">€<?=$property['price']?></span>
-                            <span>House for sale</span>
+                            <span>See more details</span>
                         </div>
             <?php
                     }

@@ -8,7 +8,7 @@
                 <h1>We Provide The Key To Successful 
                 <br>    
                 <strong>Sales, Lettings & Property Management</strong></h1>
-                <h2>Real Estate Agents Dublin: All You Need to Know Before Selling Your Property</h2>
+                <h2>Real Estate Agents Drogheda: All You Need to Know Before Selling Your Property</h2>
             </div>
             <a href="#" class="call-to-action">Explore our properties</a>  
         </div>
@@ -88,11 +88,12 @@
                 <span>House for sale</span>
             </div>
         </div>
-    </section>
+<!--    </section>-->
+<!---->
+<!---->
+<!---->
+<!--    <section class="featured-properties">-->
 
-
-
-    <section class="featured-properties">
         <h2>Featured Rent Properties</h2>
         <div class="fp-container">
             <div class="featured-property">
