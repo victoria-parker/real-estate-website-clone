@@ -2,9 +2,9 @@
     <div>
         <h3>Contact us</h3> 
         <ul>
-            <li><a href="#">1 George Road News, Drogheda </a></li>
-            <li><a href="#">01 123 4567</a></li>
-            <li><a href="#">Email: info@fake.com</a></li>
+            <li>1 George Road News, Drogheda</li>
+            <li>01 123 4567</li>
+            <li><a href="mailto:info@fakemail.com">Email: info@fakemail.com</a></li>
             <li><a href="contact.php">Contact form</a></li>
         </ul>
     </div>
@@ -12,17 +12,9 @@
         <h3>Estate agents</h3>
          <ul>
             <li><a href="#">Property Management</a></li>
-            <li><a href="#">Property Letting</a></li>
-            <li><a href="#">Property Sales</a></li>
+            <li><a href="lettings.php">Property Letting</a></li>
+            <li><a href="sales.php">Property Sales</a></li>
             <li><a href="#">Property Valuations</a></li>
-        </ul>
-    </div>
-    <div>
-        <h3>Property Advice</h3> 
-        <ul>
-            <li><a href="#">Why hiring a Estate Agent will benefit you</a></li>
-            <li><a href="#">Is this the best time to sell?</a></li>
-            <li><a href="#">Why Do Landlords Hire a Estate Agent?</a></li>
         </ul>
     </div>
     <div>
