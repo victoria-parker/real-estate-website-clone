@@ -155,6 +155,7 @@ h1, h2, h3{
 }
 .featured-properties{
     margin: 3rem 0;
+    padding-bottom: 2rem;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -172,7 +173,9 @@ h1, h2, h3{
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
 }
-
+.featured-properties a{
+    align-self: center;
+}
 .featured-property{
     margin: 1.5rem 0 ;
     background-color: white;
