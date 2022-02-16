@@ -11,10 +11,9 @@
     <div>
         <h3>Estate agents</h3>
          <ul>
-            <li><a href="#">Property Management</a></li>
             <li><a href="lettings.php">Property Letting</a></li>
             <li><a href="sales.php">Property Sales</a></li>
-            <li><a href="#">Property Valuations</a></li>
+            <li><a href="about.php">About us</a></li>
         </ul>
     </div>
     <div>

@@ -259,7 +259,7 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items:top;
     flex-wrap: wrap;
     padding: 1rem 0;
     background-color: black;
