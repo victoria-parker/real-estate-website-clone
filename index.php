@@ -1,5 +1,9 @@
 <?php
     include 'includes/header.php';
+    require 'classes/Connexion.php';
+    require 'classes/Property.php';
+    $Property=new Property();
+    $properties=$Property->listProperties();
 ?>
 <main>
     <div class="hero-index bg-img">
@@ -63,63 +67,52 @@
     <section class="featured-properties">
         <h2>Featured Sale Properties</h2>
         <div class="fp-container">
+
+        <?php
+
+            foreach($properties as $property){
+                if($property['transaction_type'] == 'sale'){
+                    if($property['mainFeatured']){
+
+        ?>
             <div class="featured-property">
-                <h4>House 23, Green Tree Street, Dublin</h4>
+                <p>Property id: <?=$property['identifier']?></p>
+                <h4><?=$property['address']?></h4>
                 <div class="img-container">
-                <img src="images/placeholder-house.jpg" alt="house">
+                <img src="images/house-for-sale/<?=$property['image']?>" alt="house">
                 </div>
-                <span class="price">$199.999,00</span>
+                <span class="price">$<?=$property['price']?></span>
                 <span>House for sale</span>
             </div>
-            <div class="featured-property">
-                <h4>House 23, Green Tree Street, Dublin</h4>
-                <div class="img-container">
-                <img src="images/placeholder-house.jpg" alt="house">
-                </div>
-                <span class="price">$199.999,00</span>
-                <span>House for sale</span>
-            </div>
-            <div class="featured-property">
-                <h4>House 23, Green Tree Street, Dublin</h4>
-                <div class="img-container">
-                <img src="images/placeholder-house.jpg" alt="house">
-                </div>
-                <span class="price">$199.999,00</span>
-                <span>House for sale</span>
-            </div>
+        <?php
+                }
+            }
+        }
+        ?>
         </div>
-<!--    </section>-->
-<!---->
-<!---->
-<!---->
-<!--    <section class="featured-properties">-->
+
 
         <h2>Featured Rent Properties</h2>
         <div class="fp-container">
+        <?php
+            foreach($properties as $property){    
+                if($property['transaction_type'] == 'rent'){
+                    if( $property['mainFeatured']){
+        ?>
             <div class="featured-property">
-                <h4>House 23, Green Tree Street, Dublin</h4>
+                <p>Property id: <?=$property['identifier']?></p>
+                <h4><?=$property['address']?></h4>
                 <div class="img-container">
-                    <img src="images/placeholder-house.jpg" alt="house">
+                    <img src="images/house-to-let/<?=$property['image']?>" alt="house">
                 </div>
-                <span class="price">$1.999,00</span>
+                <span class="price">$<?=$property['price']?></span>
                 <span>House for rent</span>
             </div>
-            <div class="featured-property">
-                <h4>House 23, Green Tree Street, Dublin</h4>
-                <div class="img-container">
-                    <img src="images/placeholder-house.jpg" alt="house">
-                </div>
-                <span class="price">$1.999,00</span>
-                <span>House for rent</span>
-            </div>
-            <div class="featured-property">
-                <h4>House 23, Green Tree Street, Dublin</h4>
-                <div class="img-container">
-                    <img src="images/placeholder-house.jpg" alt="house">
-                </div>
-                <span class="price">$1.999,00</span>
-                <span>House for rent</span>
-            </div>
+            <?php
+                    }
+                }
+            }
+            ?>
         </div>
     </section>
 

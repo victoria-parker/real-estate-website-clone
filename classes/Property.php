@@ -11,7 +11,7 @@ class Property{
 
     public function listProperties(){
         $link=Connexion::connect();
-        $sql="SELECT identifier,transaction_type,property_type,address,image,price,description FROM properties";
+        $sql="SELECT identifier,transaction_type,property_type,address,image,price,description, mainFeatured FROM properties";
         $stmt=$link->prepare($sql);
         $stmt->execute();
         $properties=$stmt->fetchAll(PDO::FETCH_ASSOC);
