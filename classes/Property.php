@@ -7,6 +7,7 @@ class Property{
     private $image;
     private $price;
     private $description;
+    private $mainFeatured;
 
 
     public function listProperties(){
@@ -17,8 +18,6 @@ class Property{
         $properties=$stmt->fetchAll(PDO::FETCH_ASSOC);
         return $properties;
     }
-
-
     /**
      * @return mixed
      */
@@ -132,6 +131,26 @@ class Property{
     }
 
 
+
+    /**
+     * Get the value of mainFeatured
+     */ 
+    public function getMainFeatured()
+    {
+        return $this->mainFeatured;
+    }
+
+    /**
+     * Set the value of mainFeatured
+     *
+     * @return  self
+     */ 
+    public function setMainFeatured($mainFeatured)
+    {
+        $this->mainFeatured = $mainFeatured;
+
+        return $this;
+    }
 }
 
 ?>
