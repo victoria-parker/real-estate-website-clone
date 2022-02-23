@@ -7,12 +7,12 @@
 ?>
 
 <div class="details-property">
-    <button id="close-btn">X</button>	
+
     <div>
         <p>Property id: <?=$Property->getIdentifier();?></p>
             <h4><?=$Property->getAddress();?></h4>
             <div class="img-container">
-                <img src="images/house-for-sale/<?=$Property->getImage();?>" alt="house">
+                <img src="images/<?=$Property->getTransactionType();?>/<?=$Property->getImage();?>" alt="house">
             </div>
             <span class="price">$$<?=$Property->getPrice();?></span>
                 </div>
