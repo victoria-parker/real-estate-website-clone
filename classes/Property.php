@@ -18,6 +18,28 @@ class Property{
         $properties=$stmt->fetchAll(PDO::FETCH_ASSOC);
         return $properties;
     }
+    public function seePropertyById($identifier){
+        
+        $link=Connexion::connect();
+        $sql="SELECT identifier,transaction_type,property_type,address,image,price,description, mainFeatured FROM properties WHERE identifier = :identifier";
+
+        $stmt=$link->prepare($sql);
+        $stmt->bindParam(":identifier",$identifier,PDO::PARAM_INT);
+
+        if($stmt->execute()){
+            $property=$stmt->fetch();
+            $this->setIdentifier($identifier);
+            $this->setAddress($property['address']);
+            $this->setTransactionType($property['transaction_type']);
+            $this->setPropertyType($property['property_type']);
+            $this->setImage($property['image']);
+            $this->setPrice($property['price']);
+            $this->setDescription($property['description']);
+            $this->setMainFeatured($property['mainFeatured']);
+            return true;
+        }
+        return false;        
+    }
     /**
      * @return mixed
      */

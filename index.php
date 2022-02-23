@@ -83,6 +83,7 @@
                 </div>
                 <span class="price">$<?=$property['price']?></span>
                 <span>House for sale</span>
+                <button class="sm-call-to-action">See details</button>
             </div>
         <?php
                 }
@@ -108,6 +109,7 @@
                 </div>
                 <span class="price">$<?=$property['price']?></span>
                 <span>House for rent</span>
+                <button class="sm-call-to-action">See details</button>
             </div>
             <?php
                     }
