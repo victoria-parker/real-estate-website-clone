@@ -14,7 +14,7 @@
             <div class="img-container">
                 <img src="images/<?=$Property->getTransactionType();?>/<?=$Property->getImage();?>" alt="house">
             </div>
-            <span class="price">$$<?=$Property->getPrice();?></span>
+            <span class="price">$<?=$Property->getPrice();?></span>
                 </div>
                 <div>
                     <h4>Description</h4>
