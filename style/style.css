@@ -213,10 +213,12 @@ h1, h2, h3{
 .popUp-details-container{
     background-color: white;
     color: black;
-    width: 80%;
-    height: 80%;
+    max-width: 80%;
+    max-height: 80%;
+    overflow: scroll;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 #close-btn{
     align-self: flex-end;
@@ -232,9 +234,41 @@ h1, h2, h3{
     align-items: center;
     justify-content: center;
     padding: 1rem;
-    position: relative;
-}
 
+}
+#popUp-prop-identifier{
+    font-weight: bold;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+}
+ .detailsDiv1,.detailsDiv2{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.detailsDiv1 img{
+    width: 100%;
+}
+.detailsDiv1 p{
+    align-self: flex-start;
+}
+.price-container{
+    padding-top: 1rem;
+}
+.detailsDiv2 h4{
+    padding-bottom: 10px;
+    padding-left: 10px;
+    align-self: flex-start;
+}
+.detailsDiv2 p{
+    text-align: justify;
+    padding-left: 10px;
+}
+.detailsDiv2 a{
+    width: 200px;
+    align-self: center;
+}
 
 /* Articles */
 .articles{

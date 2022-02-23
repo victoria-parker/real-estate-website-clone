@@ -7,18 +7,15 @@
 ?>
 
 <div class="details-property">
-
-    <div>
-        <p>Property id: <?=$Property->getIdentifier();?></p>
-            <h4><?=$Property->getAddress();?></h4>
-            <div class="img-container">
-                <img src="images/<?=$Property->getTransactionType();?>/<?=$Property->getImage();?>" alt="house">
-            </div>
-            <span class="price">$<?=$Property->getPrice();?></span>
-                </div>
-                <div>
-                    <h4>Description</h4>
-                    <p><?=$Property->getDescription();?></p>
-                    <a href="contact.php" class="sm-call-to-action">Contact our agents</a>
+        <p id="popUp-prop-identifier">Property number: <?=$Property->getIdentifier();?></p>
+    <div class="detailsDiv1">
+        <p><?=$Property->getAddress();?></p>
+        <img src="images/<?=$Property->getTransactionType();?>/<?=$Property->getImage();?>" alt="house">
+        <div class="price-container"><span>Price: </span><span class="price">$<?=$Property->getPrice();?></span></div>
+    </div>
+    <div class="detailsDiv2">
+        <h4>Description</h4>
+        <p><?= nl2br($Property->getDescription()) ?></p>
+        <a href="contact.php" class="sm-call-to-action">Contact our agents</a>
     </div>
 </div>
