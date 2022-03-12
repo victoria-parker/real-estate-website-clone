@@ -11,17 +11,17 @@ class Message
     //Attributes
     private $fullName;
     private $email;
-    private $issue;
+    private $subject;
     private $phone;
     private $message;
 
     public function sendMessage()
     {
-        $fullName = filter_var($_POST['fullName'], FILTER_SANITIZE_STRING);
+        $fullName = htmlspecialchars($_POST['fullName'],ENT_DISALLOWED);
         $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
-        $phone = filter_var($_POST['phone'], FILTER_SANITIZE_STRING);
-        $message = filter_var($_POST['message'],FILTER_SANITIZE_STRING);
-        $issue = filter_var($_POST['issue'], FILTER_SANITIZE_STRING);
+        $phone = htmlspecialchars($_POST['phone'], ENT_DISALLOWED);
+        $message = htmlspecialchars($_POST['message'],ENT_DISALLOWED);
+        $subject = htmlspecialchars($_POST['subject'], ENT_DISALLOWED);
 
         $body='From: '.$fullName.'<br>'.'Email: '.$email.'<br>'.'Phone number:'.$phone.'<br>'.'Message: '.$message;
         $mail = new PHPMailer(true);
@@ -33,8 +33,8 @@ class Message
                 $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
                 $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
                 $mail->AuthType = 'PLAIN';
-                $mail->Username   = 'example@email.com';                     //SMTP username
-                $mail->Password   = '*********';                               //SMTP password
+                $mail->Username   = 'example@gmail.com';                     //SMTP username
+                $mail->Password   = 'example';                               //SMTP password
                 $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
                 $mail->Port       = 465;
                 $mail->SMTPOptions = array(
@@ -46,12 +46,12 @@ class Message
                 );
 
             //Recipients
-                $mail->setFrom('example@email.com',$fullName);
-                $mail->addAddress('example@email.com', 'example');
+                $mail->setFrom('example@gmail.com',$fullName);
+                $mail->addAddress('example@gmail.com', 'Me');
 
             //Content
             $mail->isHTML(true);                                  //Set email format to HTML
-            $mail->Subject = $issue;
+            $mail->Subject = $subject;
             $mail->Body    = $body;
 
 
@@ -59,6 +59,7 @@ class Message
             return 'success';
 
         } catch (Exception $e) {
+            print_r($e);
             return 'danger';
         }
 
@@ -146,21 +147,21 @@ class Message
     }
 
     /**
-     * Get the value of issue
+     * Get the value of subject
      */ 
-    public function getIssue()
+    public function getSubject()
     {
-        return $this->issue;
+        return $this->subject;
     }
 
     /**
-     * Set the value of issue
+     * Set the value of subject
      *
      * @return  self
      */ 
-    public function setIssue($issue)
+    public function setSubject($subject)
     {
-        $this->issue = $issue;
+        $this->subject = $subject;
 
         return $this;
     }

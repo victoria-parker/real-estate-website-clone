@@ -9,10 +9,10 @@
     <div class="hero-index bg-img">
         <div>
             <div>
-                <h1>We Provide The Key To Successful 
+                <h1>You thought about Selling and Buying,
                 <br>    
-                <strong>Sales, Lettings & Property Management</strong></h1>
-                <h2>Real Estate Agents Drogheda: All You Need to Know Before Selling Your Property</h2>
+                <strong>you thought of us</strong></h1>
+                <h2>Parker Real Estate Agents Drogheda</h2>
             </div>
             <a href="#featured-properties" class="call-to-action">Explore our properties</a>  
         </div>
@@ -59,7 +59,7 @@
             </div>
             <button class="sm-call-to-action">Search</button>
         </form>
-    </section>
+    </section> 
 
 
 
@@ -196,15 +196,19 @@
             <h2>Send Us a Message</h2>
             <p>Please feel free to drop us a line if you have any question.We'll get back to you as soon as possible!</p>
         </div>
-        <form action="#" method="POST">
+        <form action="sendMessage.php" method="POST">
 
             <div class="form-el">
-                <label for="full-name">Full Name</label>
-                <input type="text" name="full-name" id="full-name">
+                <label for="fullName">Full Name</label>
+                <input type="text" name="fullName" id="fullName">
             </div>
             <div class="form-el">
                 <label for="email">Email</label>
                 <input type="text" name="email" id="email">
+            </div>
+            <div class="form-el">
+                <label for="subject">Subject</label>
+                <input type="text" name="subject" id="subject">
             </div>
             <div class="form-el">
                 <label for="phone">Phone number</label>
