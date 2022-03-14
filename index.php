@@ -30,40 +30,6 @@
 
 
 
-    <section id="search-property">
-        <h2>Search our available properties</h2>
-        <form action="" method="GET" id="form-search">
-            <div>
-                <label for="type">TYPE</label><br>
-                <select name="type" id="type">
-                    <option value="type">Type</option>
-                </select>
-            </div>
-            <div>
-                <label for="location">Location</label><br>
-                <select name="location" id="location">
-                    <option value="location">location</option>
-                </select>
-            </div>
-            <div>
-                <label for="amount-of-bedrooms">Amount of bedrooms</label><br>
-                <select name="amount-of-bedrooms" id="amount-of-bedrooms">
-                    <option value="amount-of-bedrooms">Amount of bedrooms</option>
-                </select>
-            </div>
-            <div>
-                <label for="max-price">max-price</label><br>
-                <select name="max-price" id="max-price">
-                    <option value="max-price">max-price</option>
-                </select>
-            </div>
-            <button class="sm-call-to-action">Search</button>
-        </form>
-    </section> 
-
-
-
-
     <section class="featured-properties" id="featured-properties">
         <h2>Featured Sale Properties</h2>
         <div class="fp-container">
