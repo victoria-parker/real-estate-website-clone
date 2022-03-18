@@ -509,6 +509,9 @@ footer a{
     min-height: 100vh;
     padding: 6rem;
 }
+.main_admin h1{
+    color: #FF7518;
+}
 .admin_table{
     width: auto;
     height: auto;
@@ -545,3 +548,42 @@ footer a{
 .deleteBtn{
     background-color: salmon;
 }
+.admin-form{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.admin-form div{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.admin-form button{
+    width: 60%;
+    align-self: center;
+}
+
+.admin-form input, select{
+    height: 1.5rem;
+}
+
+.admin-form img{
+    width: 50%;
+    align-self: center;
+}
+
+.image-form-container{
+    border: 1px solid white;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 1rem;
+}
+.center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+

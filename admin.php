@@ -35,7 +35,17 @@
                 <td><img src="images/<?=$property['transaction_type']?>/<?=$property['image']?>" alt="imagen"></td>
                 <td><?=$property['price']?></td>
                 <td><?=$property['description']?></td>
-                <td><?=$property['mainFeatured']?></td>
+                <?php
+                if($property['mainFeatured'] == true){
+                ?>
+                    <td>Yes</td>
+                <?php
+                }else{
+                ?>
+                    <td>No</td>
+                <?php
+                }
+                ?>
                 <td><a href="formModifyProperty.php?identifier=<?=$property['identifier']?>" class="modifyBtn adminBtn">Modify</a></td>
                 <td><a href="formDeleteProperty.php?identifier=<?=$property['identifier']?>" class="deleteBtn adminBtn">Delete</a></td>
             </tr>
