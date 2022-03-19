@@ -539,14 +539,17 @@ footer a{
 }
 .addBtn{
     background-color: cornflowerblue;
+    border:1px solid cornflowerblue;
 
 }
 .modifyBtn{
     background-color: greenyellow;
+    border:1px solid greenyellow;
 }
 
 .deleteBtn{
     background-color: salmon;
+    border:1px solid salmon;
 }
 .admin-form{
     display: flex;
@@ -612,6 +615,7 @@ footer a{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     padding: 5px;  
     margin-top: 1rem;  
 }
@@ -625,4 +629,11 @@ footer a{
 
 .check-btn{
     align-self: flex-end;
+}
+
+.formDeleteBtn{
+    background-color: red;
+    color: white;
+    border: 2px solid white;
+    padding: 1rem;
 }

@@ -149,6 +149,28 @@ class Property{
         return false;
 
     }
+
+    public function deleteProperty(){
+        
+        $identifier=$_POST['identifier'];
+        $address=$_POST['address'];
+
+        $link=Connexion::connect();
+
+        $sql="DELETE FROM properties WHERE identifier=:identifier";
+
+        $stmt=$link->prepare($sql);
+
+        $stmt->bindParam(':identifier',$identifier, PDO::PARAM_INT);
+
+        if($stmt->execute()){
+            $this->setAddress($address);
+            $this->setIdentifier($identifier);
+            return $this;
+        }
+        return false;
+
+    }
     /**
      * @return mixed
      */
