@@ -104,6 +104,55 @@ class Property{
         return false;
     }
 
+    public function modifyProperty(){
+        
+        $identifier=$_POST['identifier'];
+        $transaction_type=$_POST['transaction_type'];
+        $property_type=$_POST['property_type'];
+        $address=$_POST['address'];
+        $image=$this->addImage();
+        $price=$_POST['price'];
+        $description=$_POST['description'];
+        $mainFeatured=$_POST['mainFeatured'] == 'true' ? true : false;
+
+        $link=Connexion::connect();
+
+        $sql="UPDATE properties SET 
+        transaction_type=:transaction_type, 
+        property_type=:property_type, 
+        address=:address, 
+        image=:image, 
+        price=:price, 
+        description=:description, 
+        mainFeatured=:mainFeatured
+        WHERE identifier= :identifier";
+
+        $stmt=$link->prepare($sql);
+        
+        $stmt->bindParam(':transaction_type', $transaction_type, PDO::PARAM_STR);
+        $stmt->bindParam(':property_type',$property_type, PDO::PARAM_STR);
+        $stmt->bindParam(':address',$address,PDO::PARAM_STR);
+        $stmt->bindParam(':image', $image, PDO::PARAM_STR);
+        $stmt->bindParam(':price',$price, PDO::PARAM_STR);
+        $stmt->bindParam(':description', $description, PDO::PARAM_STR);
+        $stmt->bindParam(':mainFeatured',$mainFeatured, PDO::PARAM_BOOL);
+        $stmt->bindParam(':identifier',$identifier, PDO::PARAM_INT);
+
+        if($stmt->execute()){
+            $this->setTransactionType($transaction_type);
+            $this->setPropertyType($property_type);
+            $this->setAddress($address);
+            $this->setImage($image);
+            $this->setPrice($price);
+            $this->setDescription($description);
+            $this->setMainFeatured($mainFeatured);
+            $this->setIdentifier($identifier);
+
+            return true;
+        }
+        return false;
+
+    }
     /**
      * @return mixed
      */

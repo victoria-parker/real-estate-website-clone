@@ -9,13 +9,11 @@
         <h1>Modify Property</h1>
         
 
-        <form class="admin-form">
-
-            <input type="hidden" name="identifier" value="<?=$Property->getIdentifier()?>">
+        <form class="admin-form" method="POST" action="modifyProperty.php" enctype="multipart/form-data">
 
             <div>
-            <label>Transaction type</label>
-            <select name="transaction_type" id="transaction_type">
+            <label for="transaction_type">Transaction type</label>
+            <select name="transaction_type" id="transaction_type" required>
 
             <?php
                 if($Property->getTransactionType() == "sale"){
@@ -27,7 +25,7 @@
             <?php
             }else{
             ?>
-                <option value="<?=$Property->getTransactionType()?>"><?=$Property->getTransactionType()?></option>
+                <option value="rent">rent</option>
                     <option value="sale">sale</option>
             <?php
             }
@@ -37,29 +35,29 @@
 
             <div>
                 <label for="property_type">Property type</label>
-                <input type="text" name="property_type" id="property_type" value="<?=$Property->getPropertyType()?>">
+                <input type="text" name="property_type" id="property_type" value="<?=$Property->getPropertyType()?>" required>
             </div>
 
             <div>
             <label for="address">Address</label>
-            <input type="text" name="address" id="address" value="<?=$Property->getAddress()?>">
+            <input type="text" name="address" id="address" value="<?=$Property->getAddress()?>" required>
             </div>
 
             <div class="image-form-container">
                 <img src="./images/<?=$Property->getTransactionType()?>/<?=$Property->getImage()?>">
                 <label for="image">Change image</label>
                 <input type="file" name="image" id="image">
-                <input type="hidden" value="<?=$Property->getImage()?>" name="currentImage">
+
             </div>
 
             <div>
                 <label for="price">Price</label>
-                <input type="number" name="price" id="price" min=0  step="0.01" value="<?=$Property->getPrice()?>">
+                <input type="number" name="price" id="price" min=0  step="0.01" value="<?=$Property->getPrice()?>" required>
             </div>
 
             <div>
                 <label for="description">Description</label>
-                <textarea name="description" id="description" cols="30" rows="10" style="resize: none;"><?=$Property->getDescription()?></textarea>
+                <textarea name="description" id="description" cols="30" rows="10" style="resize: none;" required><?=$Property->getDescription()?></textarea>
             </div>
 
             <div>
@@ -70,12 +68,12 @@
 
                 <div class="radio-div">
                     <label for="mainFeaturedYes">Yes</label>
-                    <input type="radio" name="mainFeatured" id="mainFeaturedYes" checked>
+                    <input type="radio" name="mainFeatured" id="mainFeaturedYes" value="true" checked>
                 </div>
 
                 <div class="radio-div">
                     <label for="mainFeaturedNo">No</label>
-                    <input type="radio" name="mainFeatured" id="mainFeaturedNo">
+                    <input type="radio" name="mainFeatured" id="mainFeaturedNo" value="false">
                 </div>
 
                 <?php
@@ -83,18 +81,23 @@
                 ?>
                 <div class="radio-div">
                     <label for="mainFeaturedYes">Yes</label>
-                    <input type="radio" name="mainFeatured" id="mainFeaturedYes">
+                    <input type="radio" name="mainFeatured" id="mainFeaturedYes" value="true">
                 </div>
 
                 <div class="radio-div">
                     <label for="mainFeaturedNo">No</label>
-                    <input type="radio" name="mainFeatured" id="mainFeaturedNo" checked>
+                    <input type="radio" name="mainFeatured" id="mainFeaturedNo" value="false" checked>
                 </div>
 
                 <?php
                 }
                 ?>
             </div>
+
+            
+            <input type="hidden" name="identifier" value="<?=$Property->getIdentifier()?>">
+            <input type="hidden" value="<?=$Property->getImage()?>" name="currentImage">
+
             <button class="sm-call-to-action">Submit</button>
         </form>
 
