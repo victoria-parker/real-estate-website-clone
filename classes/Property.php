@@ -50,17 +50,13 @@ class Property{
 
         if($_FILES['image']['error'] == 0){
 
-            if($_POST['transaction_type'] == 'rent'){
-                $route='images/rent/';
-            }else{
-                $route='images/sale/';
-            }
-
+            $route='images/';
             $temp=$_FILES['image']['tmp_name'];
             $image=$_FILES['image']['name'];
 
             move_uploaded_file($temp,$route.$image);
         }
+
         return $image;
     }
 
@@ -105,7 +101,7 @@ class Property{
     }
 
     public function modifyProperty(){
-        
+
         $identifier=$_POST['identifier'];
         $transaction_type=$_POST['transaction_type'];
         $property_type=$_POST['property_type'];

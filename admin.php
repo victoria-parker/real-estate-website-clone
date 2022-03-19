@@ -32,7 +32,7 @@
                 <td><?=$property['transaction_type']?></td>
                 <td><?=$property['property_type']?></td>
                 <td><?=$property['address']?></td>
-                <td><img src="images/<?=$property['transaction_type']?>/<?=$property['image']?>" alt="imagen"></td>
+                <td><img src="images/<?=$property['image']?>" alt="imagen"></td>
                 <td>$<?=$property['price']?></td>
                 <td><?=$property['description']?></td>
                 <?php

@@ -16,7 +16,7 @@
                             <p>Property id: <?=$property['identifier']?></p>
                             <h4><?=$property['address']?></h4>
                             <div class="img-container">
-                            <img src="images/<?=$property['transaction_type']?>/<?=$property['image']?>" alt="house">
+                            <img src="images/<?=$property['image']?>" alt="house">
                             </div>
                             <span class="price">€<?=$property['price']?></span>
                             <button class="sm-call-to-action seeDetails" data-id="<?=$property['identifier']?>">See details</button>

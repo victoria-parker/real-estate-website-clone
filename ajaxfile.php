@@ -9,7 +9,7 @@
         <p id="popUp-prop-identifier">Property number: <?=$Property->getIdentifier();?></p>
     <div class="detailsDiv1">
         <p><?=$Property->getAddress();?></p>
-        <img src="images/<?=$Property->getTransactionType();?>/<?=$Property->getImage();?>" alt="house">
+        <img src="images/<?=$Property->getImage();?>" alt="house">
         <div class="price-container"><span>Price: </span><span class="price">$<?=$Property->getPrice();?></span></div>
     </div>
     <div class="detailsDiv2">

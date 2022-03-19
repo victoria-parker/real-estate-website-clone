@@ -44,7 +44,7 @@
             </div>
 
             <div class="image-form-container">
-                <img src="./images/<?=$Property->getTransactionType()?>/<?=$Property->getImage()?>">
+                <img src="./images/<?=$Property->getImage()?>">
                 <label for="image">Change image</label>
                 <input type="file" name="image" id="image">
 
