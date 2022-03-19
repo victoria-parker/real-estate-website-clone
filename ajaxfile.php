@@ -1,9 +1,8 @@
 <?php
     require 'classes/Connexion.php';
     require 'classes/Property.php';
-    $identifier = $_POST['id'];
     $Property=new Property();
-    $Property->seePropertyById($identifier);
+    $Property->seePropertyById();
 ?>
 
 <div class="details-property">

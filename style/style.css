@@ -586,4 +586,43 @@ footer a{
     justify-content: center;
     align-items: center;
 }
+.go-back-btn{
+    padding: 1rem;
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    border: 1px solid black;
+    align-self: flex-end;
+    text-decoration: none;
+}
+.admin-form .radio-div{
+    width: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
 
+.check-message{
+    width: 350px;
+    height: 250px;
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px;  
+    margin-top: 1rem;  
+}
+.check-success{
+    border: 2px solid green;
+}
+
+.check-danger{
+    border: 2px solid darkred;
+}
+
+.check-btn{
+    align-self: flex-end;
+}

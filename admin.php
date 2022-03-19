@@ -33,7 +33,7 @@
                 <td><?=$property['property_type']?></td>
                 <td><?=$property['address']?></td>
                 <td><img src="images/<?=$property['transaction_type']?>/<?=$property['image']?>" alt="imagen"></td>
-                <td><?=$property['price']?></td>
+                <td>$<?=$property['price']?></td>
                 <td><?=$property['description']?></td>
                 <?php
                 if($property['mainFeatured'] == true){
@@ -46,8 +46,8 @@
                 <?php
                 }
                 ?>
-                <td><a href="formModifyProperty.php?identifier=<?=$property['identifier']?>" class="modifyBtn adminBtn">Modify</a></td>
-                <td><a href="formDeleteProperty.php?identifier=<?=$property['identifier']?>" class="deleteBtn adminBtn">Delete</a></td>
+                <td><a href="formModifyProperty.php?id=<?=$property['identifier']?>" class="modifyBtn adminBtn">Modify</a></td>
+                <td><a href="formDeleteProperty.php?id=<?=$property['identifier']?>" class="deleteBtn adminBtn">Delete</a></td>
             </tr>
             <?php
             }

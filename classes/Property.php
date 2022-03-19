@@ -18,8 +18,8 @@ class Property{
         $properties=$stmt->fetchAll(PDO::FETCH_ASSOC);
         return $properties;
     }
-    public function seePropertyById($identifier){
-        
+    public function seePropertyById(){
+        $identifier = $_GET['id'];
         $link=Connexion::connect();
         $sql="SELECT identifier,transaction_type,property_type,address,image,price,description, mainFeatured FROM properties WHERE identifier = :identifier";
 
@@ -40,6 +40,70 @@ class Property{
         }
         return false;        
     }
+
+    public function addImage(){
+        $image='no-image.png';
+
+        if(isset($_POST['currentImage'])){
+            $image=$_POST['currentImage'];
+        };
+
+        if($_FILES['image']['error'] == 0){
+
+            if($_POST['transaction_type'] == 'rent'){
+                $route='images/rent/';
+            }else{
+                $route='images/sale/';
+            }
+
+            $temp=$_FILES['image']['tmp_name'];
+            $image=$_FILES['image']['name'];
+
+            move_uploaded_file($temp,$route.$image);
+        }
+        return $image;
+    }
+
+    public function addProperty(){
+        
+        $transaction_type=$_POST['transaction_type'];
+        $property_type=$_POST['property_type'];
+        $address=$_POST['address'];
+        $image=$this->addImage();
+        $price=$_POST['price'];
+        $description=$_POST['description'];
+        $mainFeatured=$_POST['mainFeatured'] == 'true' ? true : false;
+
+        $link=Connexion::connect();
+
+        $sql="INSERT INTO properties VALUES
+
+            (0,:transaction_type, :property_type, :address, :image, :price, :description, :mainFeatured)";
+
+        $stmt=$link->prepare($sql);
+        
+        $stmt->bindParam(':transaction_type', $transaction_type, PDO::PARAM_STR);
+        $stmt->bindParam(':property_type',$property_type, PDO::PARAM_STR);
+        $stmt->bindParam(':address',$address,PDO::PARAM_STR);
+        $stmt->bindParam(':image', $image, PDO::PARAM_STR);
+        $stmt->bindParam(':price',$price, PDO::PARAM_STR);
+        $stmt->bindParam(':description', $description, PDO::PARAM_STR);
+        $stmt->bindParam(':mainFeatured',$mainFeatured, PDO::PARAM_BOOL);
+
+        if($stmt->execute()){
+            $this->setTransactionType($transaction_type);
+            $this->setPropertyType($property_type);
+            $this->setAddress($address);
+            $this->setImage($image);
+            $this->setPrice($price);
+            $this->setDescription($description);
+            $this->setMainFeatured($mainFeatured);
+        return true;
+        }
+
+        return false;
+    }
+
     /**
      * @return mixed
      */
