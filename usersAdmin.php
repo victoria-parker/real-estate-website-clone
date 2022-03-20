@@ -1,53 +1,37 @@
 <?php
     include 'includes/header.php';
-    require 'classes/Connexion.php';
-    require 'classes/Property.php';
-    $Property=new Property();
-    $properties=$Property->listProperties();
+    require 'config/config.php';
+    $User=new User;
+    $User->authenticate();
+    $users=$User->listUsers();
 ?>
 <main class="main_admin bg-img">
-    <h1>Properties Admin Panel</h1>
+    <h1>Users Admin Panel</h1>
     <table class="admin_table">
         <thead>
             <tr>
-                <th>Identifier</th>
-                <th>Transaction type</th>
-                <th>Property type</th>
-                <th>Address</th>
-                <th>Image</th>
-                <th>Price</th>
-                <th>Description</th>
-                <th>Main Featured</th>
+                <th>User Name</th>
+                <th>User Email</th>
                 <th colspan="2">
-                    <a href="formAddProperty.php" class="addBtn adminBtn">Add Property</a>
+                    <a href="formAddUser.php" class="addBtn adminBtn">Add User</a>
                 </th>
             </tr>
         </thead>
         <tbody>
             <?php
-                foreach($properties as $property){
+                foreach($users as $user){
                     ?>
             <tr>
-                <td><?=$property['identifier']?></td>
-                <td><?=$property['transaction_type']?></td>
-                <td><?=$property['property_type']?></td>
-                <td><?=$property['address']?></td>
-                <td><img src="images/<?=$property['image']?>" alt="imagen"></td>
-                <td>$<?=$property['price']?></td>
-                <td><?=$property['description']?></td>
+                <td><?=$user['userName']?></td>
+                <td><?=$user['userEmail']?></td>
+                <td><a href="formModifyUser.php?userEmail=<?=$user['userEmail']?>" class="modifyBtn adminBtn">Modify</a></td>
                 <?php
-                if($property['mainFeatured'] == true){
+                 if($user['userEmail'] !== 'admin@amin.com'){
                 ?>
-                    <td>Yes</td>
-                <?php
-                }else{
-                ?>
-                    <td>No</td>
+                <td><a href="formDeleteUser.php?userEmail=<?=$user['userEmail']?>" class="deleteBtn adminBtn">Delete</a></td>
                 <?php
                 }
                 ?>
-                <td><a href="formModifyProperty.php?id=<?=$property['identifier']?>" class="modifyBtn adminBtn">Modify</a></td>
-                <td><a href="formDeleteProperty.php?id=<?=$property['identifier']?>" class="deleteBtn adminBtn">Delete</a></td>
             </tr>
             <?php
             }

@@ -1,7 +1,8 @@
 <?php
       include 'includes/header.php';
-      require 'classes/Connexion.php';
-      require 'classes/Property.php';
+      require 'config/config.php';
+      $User=new User;
+      $User->authenticate();
       $Property=new Property();
       $Property->seePropertyById();
 ?>

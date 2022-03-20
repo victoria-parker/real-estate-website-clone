@@ -1,7 +1,5 @@
 <?php
-    include 'includes/header.php';
-?>
-
-<?php
-    include 'includes/footer.php';
+    require 'config/config.php';
+    $User=new User();
+    $User->login();
 ?>

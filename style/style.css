@@ -528,13 +528,16 @@ footer a{
     background-color: #1B1B1B;
     border-radius: 15px;
 }
+.admin_table tr{
+    height: 1.75rem;
+}
 .admin_table img{
     width: 150px;
 }
 .adminBtn{
-    padding: 1rem;
+    padding: .2rem;
     text-decoration: none;
-    border-radius: 15px;
+    border-radius: 5px;
     color: #1B1B1B;
 }
 .addBtn{

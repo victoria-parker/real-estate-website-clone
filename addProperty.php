@@ -1,7 +1,8 @@
 <?php
-      include 'includes/header.php';
-      require 'classes/Connexion.php';
-      require 'classes/Property.php';
+    require 'config/config.php';
+    include 'includes/header.php';
+      $User=new User;
+      $User->authenticate();
       $Property=new Property();
       $check=$Property->addProperty();
       $css='danger';
