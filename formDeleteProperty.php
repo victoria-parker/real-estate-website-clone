@@ -23,21 +23,6 @@
         <a href="admin.php" class="go-back-btn check-btn">Go back to admin</a>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         <script>
                 Swal.fire({
                     title: 'Are you sure you want to delete this propery?',
@@ -50,8 +35,7 @@
                     confirmButtonText: 'Yes, I want to delete it!'
                 }).then((result) => {
                     if (!result.value) {
-                        //redireccion al panel
-                        window.location='adminDestinos.php';
+                        window.location='admin.php';
                     }
                 })
             </script>
