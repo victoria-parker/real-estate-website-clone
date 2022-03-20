@@ -657,6 +657,24 @@ footer a{
     margin-top: 1rem;
 }
 
+.admin-panel{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-btn{
+    color: black;
+    background-color: white;
+    border:1px solid black;
+    text-decoration: none;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-right: 1rem;
+}
+
 @media screen and (max-width:680px){
     .admin-form{
         display: flex;
@@ -666,7 +684,7 @@ footer a{
     .main_admin{
         width: 100%;
         min-height: 100vh;
-        padding: 1rem;
+        padding: 6rem 1rem;
     }
 }
 
