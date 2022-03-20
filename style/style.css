@@ -631,9 +631,24 @@ footer a{
     align-self: flex-end;
 }
 
+.delete-box{
+    width: auto;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid red;
+    border-radius: 15px;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+.delete-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .formDeleteBtn{
     background-color: red;
     color: white;
-    border: 2px solid white;
-    padding: 1rem;
+    border: none;
+    margin-top: 1rem;
 }

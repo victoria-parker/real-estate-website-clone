@@ -9,12 +9,12 @@
 
       if($check){
         $css='success';
-      $message='The property located in '.$check->getAddress().' has been deleted from the system correcty';
+      $message='The property located in '.$check->getAddress().' with the id '.$check->getIdentifier().' has been deleted from our system correcty.';
     
       }
 ?>
 <main class="main_admin bg-img center">
-    <h1>Modify a Property Section</h1>
+    <h1>Delete a Property Section</h1>
     <div class="check-message check-<?=$css?>">
             <?=$message?>
             <br>

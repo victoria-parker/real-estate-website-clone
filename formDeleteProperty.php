@@ -6,9 +6,9 @@
       $Property->seePropertyById();
 ?>
 <main class="main_admin bg-img center">
-    <h1>Modify a Property Section</h1>
-    <div class="check-message check-danger">
-            <form action="deleteProperty.php" method="post">
+    <h1>Delete a Property Section</h1>
+    <div class="delete-box">
+            <form action="deleteProperty.php" method="post" class="delete-form">
 
                 <span>The <?=$Property->getPropertyType()?> located in <?=$Property->getAddress()?> will be deleted from our system</span>
 
