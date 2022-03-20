@@ -571,6 +571,10 @@ footer a{
 .admin-form input, select{
     height: 1.5rem;
 }
+.admin-form input:focus{
+    outline: none;
+    
+}
 
 .admin-form img{
     width: 50%;
@@ -651,4 +655,27 @@ footer a{
     color: white;
     border: none;
     margin-top: 1rem;
+}
+
+@media screen and (max-width:680px){
+    .admin-form{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+    .main_admin{
+        width: 100%;
+        min-height: 100vh;
+        padding: 1rem;
+    }
+}
+
+@media screen and (min-width:2000px){
+    .admin-form input, select, button{
+        height: 3rem;
+        font-size: 1.5rem;
+    }
+    body{
+        font-size: 1.5rem;
+    }
 }

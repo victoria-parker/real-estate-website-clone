@@ -18,7 +18,7 @@
     <div class="check-message check-<?=$css?>">
             <?=$message?>
             <br>
-            <a href="admin.php" class="go-back-btn check-btn">Go back to admin</a>
+            <a href="propertiesAdmin.php" class="go-back-btn check-btn">Go back to admin</a>
         </div>
 </main>
 <?php
