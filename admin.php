@@ -1,7 +1,9 @@
 <?php
+    require 'config/config.php';
+    $User=new User;
+    $User->authenticate();
     include 'includes/header.php';
-    require 'classes/Connexion.php';
-    require 'classes/Property.php';
+
 
 ?>
 <main class="main_admin bg-img">
