@@ -20,7 +20,7 @@
             <br>
         </div>
         
-        <a href="admin.php" class="go-back-btn check-btn">Go back to admin</a>
+        <a href="propertiesAdmin.php" class="go-back-btn check-btn">Go back to admin</a>
 
 
         <script>
@@ -35,7 +35,7 @@
                     confirmButtonText: 'Yes, I want to delete it!'
                 }).then((result) => {
                     if (!result.value) {
-                        window.location='admin.php';
+                        window.location='propertiesAdmin.php';
                     }
                 })
             </script>

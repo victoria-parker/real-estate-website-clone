@@ -101,7 +101,7 @@
             <button class="sm-call-to-action">Submit</button>
         </form>
 
-        <a href="admin.php" class="go-back-btn">Go back to admin</a>
+        <a href="propertiesAdmin.php" class="go-back-btn">Go back to admin</a>
     </main>
 <?php
     include 'includes/footer.php';
