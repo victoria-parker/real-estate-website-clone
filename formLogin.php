@@ -1,6 +1,6 @@
 <?php
-      include 'includes/header.php';
       require 'config/config.php';
+      include 'includes/headerAdmin.php';
 
 ?>
 <main class="main_admin bg-img center">

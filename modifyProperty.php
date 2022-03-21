@@ -1,5 +1,5 @@
 <?php
-      include 'includes/header.php';
+
       require 'config/config.php';
       $User=new User;
       $User->authenticate();
@@ -13,6 +13,7 @@
       $message='The property has been modify correcty';
     
       }
+      include 'includes/headerAdmin.php';
 ?>
 <main class="main_admin bg-img center">
     <h1>Modify a Property Section</h1>

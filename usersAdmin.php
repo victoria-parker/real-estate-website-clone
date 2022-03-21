@@ -1,10 +1,10 @@
 <?php
-    include 'includes/header.php';
     require 'config/config.php';
     $User=new User;
     $User->authenticate();
     $User->authenticateAdmin();
     $users=$User->listUsers();
+    include 'includes/headerAdmin.php';
 ?>
 <main class="main_admin bg-img">
     <h1>Users Admin Panel</h1>

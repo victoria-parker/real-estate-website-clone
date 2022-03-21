@@ -1,10 +1,10 @@
 <?php
     require 'config/config.php';
-    include 'includes/header.php';
-      $User=new User;
-      $User->authenticate();
-      $User->authenticateAdmin();
-      $check=$User->addUser();
+    $User=new User;
+    $User->authenticate();
+    $User->authenticateAdmin();
+    include 'includes/headerAdmin.php';
+    $check=$User->addUser();
       $css='danger';
       $message='Sorry, the user hasn\'t been added, please try again later';
 

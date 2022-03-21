@@ -1,10 +1,11 @@
 <?php
-      include 'includes/header.php';
+
       require 'config/config.php';
       $User=new User;
       $User->authenticate();
       $Property=new Property();
       $Property->seePropertyById();
+      include 'includes/headerAdmin.php';
 ?>
 <main class="main_admin bg-img center">
     <h1>Delete a Property Section</h1>

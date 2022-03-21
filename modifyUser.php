@@ -1,6 +1,5 @@
 <?php
     require 'config/config.php';
-    include 'includes/header.php';
       $User=new User;
       $User->authenticate();
       $User->authenticateAdmin();
@@ -13,6 +12,7 @@
       $message='The user has been modified correcty';
     
       }
+      include 'includes/headerAdmin.php';
 ?>
 <main class="main_admin bg-img center">
     <h1>Modify a User Section</h1>

@@ -1,5 +1,4 @@
 <?php
-      include 'includes/header.php';
       require 'config/config.php';
       $User=new User;
       $User->authenticate();
@@ -13,6 +12,7 @@
       $message='The property located in '.$check->getAddress().' with the id '.$check->getIdentifier().' has been deleted from our system correcty.';
     
       }
+      include 'includes/headerAdmin.php';
 ?>
 <main class="main_admin bg-img center">
     <h1>Delete a Property Section</h1>

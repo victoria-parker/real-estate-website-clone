@@ -1,10 +1,11 @@
 <?php
-      include 'includes/header.php';
+
       require 'config/config.php';
       $User=new User;
       $User->authenticate();
       $User->authenticateAdmin();
       $User->seeUserById();
+      include 'includes/headerAdmin.php';
 ?>
 <main class="main_admin bg-img center">
     <h1>Delete a User Section</h1>

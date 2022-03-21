@@ -1,6 +1,6 @@
 <?php
     require 'config/config.php';
-    include 'includes/header.php';
+    include 'includes/headerAdmin.php';
       $User=new User;
       $User->authenticate();
       $Property=new Property();

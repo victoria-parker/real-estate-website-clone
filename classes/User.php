@@ -46,7 +46,7 @@ class User{
     }
 
     public function authenticateAdmin(){
-        if(!isset($_SESSION['adminPermits'])){
+        if($_SESSION['adminPermits'] == false){
             header('location: formLogin.php?error=3');
         }
     }
