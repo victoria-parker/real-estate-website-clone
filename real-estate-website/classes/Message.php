@@ -17,11 +17,11 @@ class Message
 
     public function sendMessage()
     {
-        $fullName = htmlspecialchars($_POST['fullName'],ENT_DISALLOWED);
-        $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
-        $phone = htmlspecialchars($_POST['phone'], ENT_DISALLOWED);
-        $message = htmlspecialchars($_POST['message'],ENT_DISALLOWED);
-        $subject = htmlspecialchars($_POST['subject'], ENT_DISALLOWED);
+        $fullName = htmlspecialchars(trim($_POST['fullName']),ENT_QUOTES);
+        $email = filter_var(trim($_POST['email']), FILTER_SANITIZE_EMAIL);
+        $phone = htmlspecialchars(trim($_POST['phone']), ENT_QUOTES);
+        $message = htmlspecialchars(trim($_POST['message']),ENT_QUOTES);
+        $subject = htmlspecialchars(trim($_POST['subject']), ENT_QUOTES);
 
         $body='From: '.$fullName.'<br>'.'Email: '.$email.'<br>'.'Phone number:'.$phone.'<br>'.'Message: '.$message;
         $mail = new PHPMailer(true);
@@ -59,7 +59,6 @@ class Message
             return 'success';
 
         } catch (Exception $e) {
-            print_r($e);
             return 'danger';
         }
 

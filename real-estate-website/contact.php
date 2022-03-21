@@ -12,23 +12,23 @@
 
         <div class="form-el">
             <label for="fullName">Full Name</label>
-            <input type="text" name="fullName" id="fullName">
+            <input type="text" name="fullName" id="fullName" required>
         </div>
         <div class="form-el">
             <label for="email">Email</label>
-            <input type="text" name="email" id="email">
+            <input type="email" name="email" id="email" required>
         </div>
         <div class="form-el">
             <label for="subject">Subject</label>
-            <input type="text" name="subject" id="subject">
+            <input type="text" name="subject" id="subject" required>
         </div>
         <div class="form-el">
             <label for="phone">Phone number</label>
-            <input type="tel" name="phone" id="phone">
+            <input type="tel" name="phone" id="phone" required>
         </div>
         <div class="form-el">
             <label for="message">You Message</label>
-            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            <textarea name="message" id="message" cols="30" rows="10" style="resize: none;"></textarea>
         </div>
         <button class="sm-call-to-action">Submit</button>    
         </form>        

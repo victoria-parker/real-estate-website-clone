@@ -2,9 +2,6 @@
     include 'includes/header.php';
     require 'config/config.php';
     require 'classes/vendor/autoload.php';
-    $User=new User;
-    $User->authenticate();
-
     $Message=new Message();
     $check=$Message->sendMessage();
 ?>
