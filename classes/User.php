@@ -165,7 +165,7 @@ class User{
 
         $stmt=$link->prepare($sql);
 
-        $stmt->bindParam(':uset',$userId, PDO::PARAM_INT);
+        $stmt->bindParam(':userId',$userId, PDO::PARAM_INT);
 
         if($stmt->execute()){
             $this->setUserId($userId);
