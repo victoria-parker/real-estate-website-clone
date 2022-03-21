@@ -1,7 +1,7 @@
 <?php
     include 'includes/header.php';
     require 'config/config.php';
-    require 'classes/vendor/autoload.php';
+    require './vendor/autoload.php';
     $Message=new Message();
     $check=$Message->sendMessage();
 ?>
