@@ -3,6 +3,7 @@
     require 'config/config.php';
     $User=new User;
     $User->authenticate();
+    $User->authenticateAdmin();
     $users=$User->listUsers();
 ?>
 <main class="main_admin bg-img">
@@ -24,11 +25,11 @@
             <tr>
                 <td><?=$user['userName']?></td>
                 <td><?=$user['userEmail']?></td>
-                <td><a href="formModifyUser.php?userEmail=<?=$user['userEmail']?>" class="modifyBtn adminBtn">Modify</a></td>
+                <td><a href="formModifyUser.php?id=<?=$user['id']?>" class="modifyBtn adminBtn">Modify</a></td>
                 <?php
-                 if($user['userEmail'] !== 'admin@amin.com'){
+                 if($user['adminPermits'] == false){
                 ?>
-                <td><a href="formDeleteUser.php?userEmail=<?=$user['userEmail']?>" class="deleteBtn adminBtn">Delete</a></td>
+                <td><a href="formDeleteUser.php?id=<?=$user['id']?>" class="deleteBtn adminBtn">Delete</a></td>
                 <?php
                 }
                 ?>

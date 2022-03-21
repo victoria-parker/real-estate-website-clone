@@ -27,6 +27,10 @@
                 $title='Access denied';
                 $message='You need to login first';
             }
+            if($error == 3){
+                $title='Access denied';
+                $message='You need to login as admin to access that page';
+            }
         ?>
         <script>
             Swal.fire(

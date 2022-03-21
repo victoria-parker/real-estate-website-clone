@@ -4,18 +4,18 @@
       $User=new User;
       $User->authenticate();
       $User->authenticateAdmin();
-      $check=$User->addUser();
+      $check=$User->modifyUser();
       $css='danger';
-      $message='Sorry, the user hasn\'t been added, please try again later';
+      $message='Sorry, the user hasn\'t been modified, please try again later';
 
       if($check){
         $css='success';
-      $message='The user has been added correcty';
+      $message='The user has been modified correcty';
     
       }
 ?>
 <main class="main_admin bg-img center">
-    <h1>Add a User Section</h1>
+    <h1>Modify a User Section</h1>
     <div class="check-message check-<?=$css?>">
             <?=$message?>
             <br>

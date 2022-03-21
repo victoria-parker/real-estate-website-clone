@@ -3,6 +3,7 @@
     require 'config/config.php';
     $User=new User;
     $User->authenticate();
+    $User->authenticateAdmin();
 ?>
     <main class="main_admin bg-img center">
         <h1>Add a User</h1>

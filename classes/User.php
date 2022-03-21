@@ -55,7 +55,7 @@ class User{
 
         $link=Connexion::connect();
 
-        $sql="SELECT userName, userEmail, userPassword FROM users";
+        $sql="SELECT userName, userEmail, userPassword, adminPermits, id FROM users";
 
         $stmt=$link->prepare($sql);
 
@@ -70,7 +70,7 @@ class User{
         $userEmail=$_POST['userEmail'];
         $userName=$_POST['userName'];
         $userPassword=$_POST['userPassword'];
-        $adminPermits=$_POST['adminPermits'];
+        $adminPermits=$_POST['adminPermits'] == 'true' ? true : false;
         $userId=$_POST['userId'];
         
         $link=Connexion::connect();
