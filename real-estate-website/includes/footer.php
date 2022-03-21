@@ -26,6 +26,8 @@
         </ul>
     </div>
 </footer>
+<small style="display:block; width:200px; margin: auto"><strong>DISCLAIMER:</strong>
+This is NOT a real  real estate website and is only being used & developed for practice purposes</small>
 <script src="js/main.js"></script>
 </body>
 </html>
