@@ -35,7 +35,7 @@
                 var id = $(this).data('id');
                 $.ajax({
                     url: 'ajaxfile.php',
-                    type: 'post',
+                    type: 'get',
                     data: {id: id},
                     success: function(response){ 
                         $('.popUp-body').html(response); 

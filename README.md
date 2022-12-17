@@ -17,4 +17,4 @@ Built with:
 * PHPMailer
 
 ## Demo
-The website is deployed at https://real-estate-website-clone.herokuapp.com/index.php
+The website is deployed at http://real-estate-clone.infinityfreeapp.com/index.php
