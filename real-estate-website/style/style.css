@@ -88,6 +88,15 @@ h1, h2, h3{
     margin-top: .25rem;
 
 }
+
+@media screen and (max-width:980px) {
+    .hero-index{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 7rem 3rem;
+     }
+}
 .call-to-action{
     display: inline-block;
     margin-top: 50px; 
