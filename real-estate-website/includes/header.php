@@ -27,6 +27,7 @@
             <nav>
             <div id="logo"><img src="images/logo.png" alt="logo" width="100px"></div>
             <button class="btn"><i class="fas fa-bars"></i></button>
+            <div id="menu-container">
             <ul id="menu">
                 <li><a href="index.php">HOME</a></li>
                 <li><a href="about.php">ABOUT</a></li>
@@ -34,6 +35,8 @@
                 <li><a href="lettings.php">LETTING</a></li>
                 <li><a href="contact.php">CONTACT</a></li>
             </ul>
+            </div>
+            
             </nav>
         </div>
     </header>
