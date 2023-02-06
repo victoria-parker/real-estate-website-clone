@@ -83,7 +83,7 @@
             }
             ?>
         </div>
-        <a href="#featured-properties" class="sm-call-to-action">Explore Lettings</a>
+        <a href="lettings.php" class="sm-call-to-action">Explore Lettings</a>
     
     <!-- Ajax pop Up details -->
     <script type='text/javascript'>
